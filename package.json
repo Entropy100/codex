@@ -1,0 +1,19 @@
+{
+  "name": "entropy-cloud",
+  "private": true,
+  "packageManager": "pnpm@10.28.1",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @entropy/dashboard --filter @entropy/api dev",
+    "dev:dashboard": "pnpm --filter @entropy/dashboard dev",
+    "dev:api": "pnpm --filter @entropy/api dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "pnpm --filter @entropy/api test",
+    "db:migrate:local": "pnpm --filter @entropy/api db:migrate:local",
+    "db:migrate": "pnpm --filter @entropy/api db:migrate"
+  },
+  "devDependencies": { "@types/node": "^24.0.0", "prettier": "^3.5.3", "typescript": "^5.8.3" }
+}

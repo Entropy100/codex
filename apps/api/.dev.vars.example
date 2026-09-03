@@ -1,0 +1,4 @@
+# Never commit this file after adding values.
+CLOUDFLARE_API_TOKEN=replace_with_scoped_token
+CLOUDFLARE_ACCOUNT_ID=replace_with_account_id
+DASHBOARD_ORIGIN=http://localhost:5173
